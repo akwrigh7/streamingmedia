@@ -3,20 +3,6 @@ body {
 }
 
 h1 {
-    background-color: green;
-}
-
-audio::-webkit-media-controls-mute-button {
-
-}
-audio::-webkit-media-controls-play-button {
-
-}
-audio::-webkit-media-controls-enclosure {
-
-}
-
-h1 {
     font-size:1.25em;
 }
 h2, h3 {
@@ -27,6 +13,16 @@ p, dl, dd {
 }
 footer p {
     font-size: .75em;
+}
+
+audio::-webkit-media-controls-mute-button {
+
+}
+audio::-webkit-media-controls-play-button {
+
+}
+audio::-webkit-media-controls-enclosure {
+
 }
 
 #trending ::-webkit-scrollbar {
