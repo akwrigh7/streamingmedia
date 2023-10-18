@@ -47,7 +47,8 @@ h1, h2, h3 {
 nav {
     background-color: #030A8C;
     grid-area: nav;
-    height: 60px
+    height: 60px;
+    position: relative;
 }
 
 nav h2 {
@@ -60,75 +61,60 @@ nav ul, nav a {
     text-decoration: none;
 }
 
-.songs {
-    position: relative;
-    
-}
-
-.artist {
-    color: white;
-}
-
 #MuzMak {
     font-variant-caps: small-caps;
     position: absolute;
     top: 10px;
-    left: 220px;
-    text-align: center;
+    margin-left: 55px;
 }
 
 #MuzMak a {
     color: white;
     font-size: 30px;
     font-weight: bold;
-    
-    
 }
 
 #curated_playlists section, #your_playlists section {
     text-align: center;
-    
 }
 
 #curated_playlists {
     background-color: #030A8C;
+    height: 340px;
 }
 
 #curated_playlists section {
-    margin: 15px;
+    margin: 0 10px 10px 10px;
     background-color: #020873;
-    width: 140px;
-    padding: 10px;
-    height: 270px;
+    width: 150px;
+    padding: 10px 10px 0 10px
+    
     
 }
 
 #your_playlists {
     background-color: #2699FB;
+    height: 324px;
 }
 
 #your_playlists h3, #your_playlists p, #curated_playlists h3, #curated_playlists p {
     color: white;
     line-height: 1em;
-    margin: 10px
+    margin: 10px;
 
 }
 
 #your_playlists section {
-    margin: 15px;
+    margin: 0 10px 10px 10px;
     background-color: #0D8DFB;
-    width: 140px;
-    padding: 10px;
-    height: 270px;
+    width: 150px;
+    padding: 10px 10px 0 10px;
     
-    
-    
-
 }
 
 .heads {
-    margin-left: 30px;
     background-color: white;
+    padding: 0 0 10px 40px;
     
 }
 
@@ -164,18 +150,33 @@ nav ul, nav a {
 }
 
 #scroll div h3 {
-    bottom: 10px;
+    bottom: 15px;
+}
+
+#scroll_your {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#scroll_curated {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 dt {
     font-style: italic;
-    padding-right: 5px;
-    
 }
 
 dl {
     color: #590242;
     display: flex;
+}
+
+dd {
     
 }
 
@@ -191,16 +192,17 @@ audio {
     text-decoration: none;
     padding: 10px 30px;
     border-radius: 5px;
-    display: inline-block;
     text-align: center;
-    margin: 10px 0 30px 20px;
-    
+    margin: 0 0 30px 34px;
 }
+
 
 .more_p {
     background-color: white;
-    
+    margin-bottom: 50px;
+    margin-top: 20px
 }
+
 
 div h2 {
     color: #590242;
@@ -315,6 +317,28 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 }
 
 @media screen and (min-width:834px) {
+    body {
+        width: 834px;
+        
+    }
+    
+    main {
+        display: grid;
+    }
+
+    #scroll {
+        width: 834px;
+    }
+
+    #more_tren {
+        position: relative;
+        left: 620px
+    }
+
+    #your_playlists { 
+         
+    }
+
     ul {
         overflow: visible;
         position: absolute;

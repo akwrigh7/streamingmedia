@@ -20,16 +20,16 @@
         <label for="dropdown"><span></span></label>
         <ul>
             <li id="MuzMak"><a href="#">MuzakMaker</a></li>
-            <li><a href="#">Trending Songs</a></li>
-            <li><a href="#">Your playlists</a></li>
-            <li><a href="#">Curated Playlists</a></li>
-            <li><a href="#"><img src="images/duke-silver.png" alt="guy in hat"></a></li>
+            <li class="menu"><a href="#">Trending Songs</a></li>
+            <li class="menu"><a href="#">Your playlists</a></li>
+            <li class="menu"><a href="#">Curated Playlists</a></li>
+            <li class="menu"><a href="#"><img src="images/duke-silver.png" alt="guy in hat"></a></li>
         </ul>
     </nav>
 
     <main>
+        <h2 class="heads">Trending Songs</h2>
         <section id="trending">
-            <h2 class="heads">Trending Songs</h2>
             <div id="scroll">
             <section>
                 <div>
@@ -101,14 +101,13 @@
                     </audio>
             </section>
             </div>
-
-            <a href="#" class="more">More trending</a>
-   
+            <p class="more_p"><a href="#" class="more" id="more_tren">More trending</a></p>
         </section>
         
+
         <section id="your_playlists">
             <h2 class="heads">Your Playlists</h2>
-            <div>
+            <div id="scroll_your">
             <section>
                 <img src="images/best-of-2020-cover.png" alt="2020 flame">
                 <h3>Best of 2020</h3>
@@ -138,17 +137,13 @@
                 <h3>Smooth Study</h3>
                 <p>Background music to keep you going while you study.</p>
             </section>
-
             </div>
-
-            <p class="more_p"><a href="#" class="more">All your playlists</a></p>
-            
         </section>
-
+        <p class="more_p"><a href="#" class="more">All your playlists</a></p>
         
         <section id="curated_playlists">
             <h2 class="heads">Curated Playlists</h2>
-            <div>
+            <div id="scroll_curated">
             <section>
                 <img src="images/boozy-brunch-cover.png" alt="drinks">
                 <h3>Boozy Brunch</h3>
@@ -178,11 +173,9 @@
                 <h3>Jazz Saxophone</h3>
                 <p>The greatest collection of your sax favorites.</p>
             </section>
-            </div>
-
-            <p class="more_p"><a href="#" class="more">More curated</a></p>
-                
+            </div>  
         </section>
+        <p class="more_p"><a href="#" class="more">More curated</a></p>
     </main>
     <footer>
         <p>Copyright 2022 Smooth Jazz</p>
