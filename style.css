@@ -49,13 +49,28 @@ nav {
     grid-area: nav;
 }
 
+nav h2 {
+    visibility: hidden;
+}
+
 nav ul, nav a {
     list-style-type: none;
     text-decoration: none;
 }
 
+.songs {
+    position: relative;
+    
+}
+
+.artist {
+    color: white;
+}
+
 #MuzMak {
     font-variant-caps: small-caps;
+    position: absolute;
+
 }
 
 #curated_playlists section, #your_playlists section {
@@ -104,25 +119,40 @@ nav ul, nav a {
     
 }
 
-.scroll {
+#scroll {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     overflow-x: auto;
     overflow-y: hidden;
 }
 
-.scroll section {
+#scroll section {
     margin: 10px;
     position: relative;
 }
 
-.scroll div {
+#scroll div {
     position: absolute;
     top: 251px;
+    z-index: 1;
     background-color: rgba(255,255,255,.75);
     padding: 5px;
     height: 50px;
     width: 350px;
+}
+
+#scroll div h3, #scroll div dl {
+    position: absolute;
+    
+}
+
+#scroll div dl {
+    top: 20px;
+    display: flex;
+}
+
+#scroll div h3 {
+    bottom: 10px;
 }
 
 dt {
@@ -152,6 +182,7 @@ audio {
     display: block;
     text-align: center;
     margin: 10px 0 30px 32px;
+    
 }
 
 div h2 {
@@ -200,7 +231,7 @@ audio::-webkit-media-controls-enclosure {
 #trending ::-webkit-scrollbar-thumb:hover {
     background: #020659;
 }
-#playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+#your_playlists ::-webkit-scrollbar, #curated_playlists ::-webkit-scrollbar {
     width: 15px;
 }
 #playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
@@ -268,13 +299,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     top: 0;
 }
 
-
-@media screen and (min-width: 375px) {
-    nav {
-        color: green;
-    }
-}
-
 @media screen and (min-width:834px) {
     ul {
         overflow: visible;
@@ -283,6 +307,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
+
     label span, input {
         display: none;
     }
