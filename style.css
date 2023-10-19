@@ -80,16 +80,14 @@ nav ul, nav a {
 
 #curated_playlists {
     background-color: #030A8C;
-    height: 340px;
+    height: 342px;
 }
 
 #curated_playlists section {
     margin: 0 10px 10px 10px;
     background-color: #020873;
     width: 150px;
-    padding: 10px 10px 0 10px
-    
-    
+    padding: 10px 10px 0 10px;
 }
 
 #your_playlists {
@@ -153,14 +151,7 @@ nav ul, nav a {
     bottom: 15px;
 }
 
-#scroll_your {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-
-#scroll_curated {
+#scroll_curated, #scroll_your {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     overflow-x: auto;
@@ -177,7 +168,8 @@ dl {
 }
 
 dd {
-    
+   position: relative;
+   right: 25px;
 }
 
 audio {
@@ -319,11 +311,23 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 @media screen and (min-width:834px) {
     body {
         width: 834px;
-        
     }
     
-    main {
-        display: grid;
+    #MuzMak {
+        position: absolute;
+        top: -10px;
+        left: -40px;
+    }
+
+    .menu {
+        position: relative;
+        left: 300px;
+        
+        
+    } 
+
+    .menu a {
+        color: white;
     }
 
     #scroll {
@@ -332,11 +336,109 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 
     #more_tren {
         position: relative;
-        left: 620px
+        left: 620px;
     }
 
-    #your_playlists { 
-         
+    .heads {
+        margin: 0 auto;
+    }
+
+    #other {
+        position: relative;
+        left: 180px;
+    }
+
+    #other2 {
+        position: relative;
+        left: 205px;
+    }
+
+    #medium {
+        display: grid;
+    }
+
+    #second {
+        grid-column: 2/3;
+    }
+
+    #scroll_your {
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 460px;
+        padding-top: 7px;
+    }
+
+    #scroll_curated {
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 460px;
+        padding-top: 7px;
+    }
+
+    #curated_playlists { 
+        height: 496px;
+        width: 417px;
+        
+    }
+
+    #curated_playlists section {
+        width: 365px;
+        height: 125px;
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr
+    }
+
+    #curated_playlists img {
+        grid-column: 1/2;
+    }
+
+    #curated_playlists section h3 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        text-align: center;
+    }
+    
+    #curated_playlists section p {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        position: relative;
+        top: 30px;
+        text-align: center;
+    }
+
+    #your_playlists {
+        height: 496px;
+        width: 417px;
+    }
+
+    #your_playlists section {
+        width: 360px;
+        height: 125px;
+        text-align: left;
+        display: grid;
+    }
+
+    #your_playlists img {
+        grid-column: 1/2;
+    }
+
+    #your_playlists section h3 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        text-align: center;
+    }
+    
+    #your_playlists section p {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        position: relative;
+        top: 30px;
+        text-align: center;
     }
 
     ul {
