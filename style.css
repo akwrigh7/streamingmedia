@@ -31,6 +31,9 @@ main {
 h1 {
     font-size: 22px;
     line-height: 2em;
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
 }
 
 h2, h3 {
@@ -319,15 +322,24 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         left: -40px;
     }
 
+    ul {
+        display: grid;
+    }
+
     .menu {
         position: relative;
-        left: 300px;
-        
-        
+        left: 200px;
+        text-transform: uppercase;
+        grid-template-columns: 1fr;
+        width: 100px;
+        padding-right: 60px;
+        text-align: center;
+        bottom: 5px;
     } 
 
     .menu a {
         color: white;
+        
     }
 
     #scroll {
@@ -341,6 +353,12 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 
     .heads {
         margin: 0 auto;
+    }
+
+    #trenHead {
+        padding-top: 30px;
+        position: relative;
+        top: 5px;
     }
 
     #other {
@@ -390,7 +408,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         height: 125px;
         text-align: left;
         display: grid;
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
     }
 
     #curated_playlists img {
