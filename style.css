@@ -64,6 +64,10 @@ nav ul, nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    background-color: #590242;
+}
+
 #MuzMak {
     font-variant-caps: small-caps;
     position: absolute;
@@ -198,6 +202,15 @@ audio {
     margin-top: 20px
 }
 
+#other2 {
+    position: relative;
+    
+    top: 20px;
+}
+
+.more:hover {
+    background-color: #020659;
+}
 
 div h2 {
     color: #590242;
@@ -207,15 +220,13 @@ p, dl, dd {
     font-size: 1em;
 }
 
-footer p {
-    font-size: .75em;
-    color: #590242;
-}
-
 footer {
     background-color: white;
     grid-area: footer;
     text-align: center;
+    color: #590242;
+    position: relative;
+    top: 50px;
 }
 
 audio::-webkit-media-controls-mute-button {
@@ -369,6 +380,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     #other2 {
         position: relative;
         left: 205px;
+        top: 20px;
     }
 
     #medium {
@@ -457,6 +469,11 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         position: relative;
         top: 30px;
         text-align: center;
+    }
+
+    footer {
+        top: 0;
+
     }
 
     ul {
